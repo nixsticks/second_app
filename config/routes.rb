@@ -1,4 +1,6 @@
 MorningPages::Application.routes.draw do
+  get "morning_pages/home"
+  get "morning_pages/help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
