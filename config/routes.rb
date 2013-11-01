@@ -1,5 +1,6 @@
 MorningPages::Application.routes.draw do
   root to: 'morning_pages#home'
+  get "morning_pages/home"
   get "morning_pages/help"
   get "morning_pages/about"
 
