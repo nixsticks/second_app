@@ -1,9 +1,11 @@
 MorningPages::Application.routes.draw do
-  root to: 'morning_pages#home'
-  get "morning_pages/home"
-  get "morning_pages/help"
-  get "morning_pages/about"
-  get "morning_pages/contact"
+  get "users/new"
+  root 'morning_pages#home'
+
+  match '/about', to: 'morning_pages#about', via: 'get'
+  match '/contact', to: 'morning_pages#contact', via: 'get'
+  match '/help', to: 'morning_pages#help', via: 'get'
+  match '/signup', to: 'users#new', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
