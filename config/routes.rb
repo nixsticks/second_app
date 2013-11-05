@@ -1,5 +1,5 @@
 MorningPages::Application.routes.draw do
-  get "users/new"
+  resources :users
   root 'morning_pages#home'
 
   match '/about', to: 'morning_pages#about', via: 'get'
